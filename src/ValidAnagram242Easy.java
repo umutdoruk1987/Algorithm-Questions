@@ -7,13 +7,8 @@ public class ValidAnagram242Easy {
 
         if (s.length()!=t.length()) return false;
 
-        char [] string1 = new char[s.length()];
-        char [] string2 = new char[t.length()];
-
-        for (int i=0; i<s.length();i++){
-           string1[i]=s.charAt(i);
-           string2[i]=t.charAt(i);
-       }
+        char [] string1 = s.toCharArray();
+        char [] string2 = t.toCharArray();
 
         Arrays.sort(string1);
         Arrays.sort(string2);
@@ -24,6 +19,11 @@ public class ValidAnagram242Easy {
         }
       return true;
     }
+
+    /*public static boolean isAnagramSolution2(String s, String t){
+
+    }*/
+
 
     public static void main(String[] args) {
 
