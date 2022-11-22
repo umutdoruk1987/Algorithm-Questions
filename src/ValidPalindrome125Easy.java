@@ -8,9 +8,9 @@ public class ValidPalindrome125Easy {
 
         for (int i=0; i<toLover.length(); i++){
 
-            if(Character.isLetterOrDigit(toLover.charAt(i))){
+            if(Character.isLetterOrDigit(toLover.charAt(i))) {
                 stringBuilder.append(toLover.charAt(i));
-            }else continue;
+            }
         }
 
         return  (stringBuilder.toString().equals(stringBuilder.reverse().toString()));
@@ -19,9 +19,15 @@ public class ValidPalindrome125Easy {
     }
     public static void main(String[] args) {
 
+        String s1 = "A man, a plan, a canal: Panama";
+        System.out.println(isPalindrome(s1));
 
-        System.out.println(isPalindrome("A man, a plan, a canal: Panama"));
-        //System.out.println(isPalindrome("Deneme ama Tam bir denEME"));
+        String s2 = "race a car";
+        System.out.println(s2);
+
+        String s3 = " ";
+        System.out.println(s3);
+
     }
 }
 
